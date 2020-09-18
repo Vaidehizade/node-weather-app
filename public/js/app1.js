@@ -42,11 +42,6 @@ const messageTwo =document.querySelector('#message-2')
 
 
 
-
-
-
-
-
 //event listener
 
 weatherForm.addEventListener('submit',(e) =>{
