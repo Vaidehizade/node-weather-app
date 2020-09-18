@@ -20,7 +20,7 @@ console.log("client side javascript msg is printed")  //client side javascript w
 })*/
 
 //asynchronous output
-fetch('http://localhost:3000/weather?address=!').then((response)=>{
+fetch('http://localhost:3000/weather?address=').then((response)=>{
     response.json().then((data)=>{
         if(data.error)
     {

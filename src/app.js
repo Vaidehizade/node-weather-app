@@ -9,6 +9,7 @@ const forecast =require('./utils/forecast')
 
 const app = express ()
 //define paths for express config
+const port = process.env.PORT || 3000
 const publicDirectorypath =path.join(__dirname, '../public')
 //serve up the directory
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -133,8 +134,8 @@ app.get('*',(req,res) =>{      //* wildcard to match a wide range of urls
 //app.com/help
 //app.com/help/about
 
-app.listen(3000, () => {
-    console.log('Server is up on the port 3000')   //starting of a server is asynchronous process
+app.listen(port, () => {
+    console.log('Server is up on the port' + port)   //starting of a server is asynchronous process
 })  //this start the server and on specific port (development port) http= 80port
 
 
